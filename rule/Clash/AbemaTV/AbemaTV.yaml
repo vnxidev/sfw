@@ -1,0 +1,25 @@
+# NAME: AbemaTV
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2022-01-18 23:33:34
+# DOMAIN-SUFFIX: 16
+# DOMAIN-KEYWORD: 1
+# TOTAL: 17
+payload:
+  - DOMAIN-SUFFIX,abema.io
+  - DOMAIN-SUFFIX,abema.tv
+  - DOMAIN-SUFFIX,adx.promo
+  - DOMAIN-SUFFIX,ameba.jp
+  - DOMAIN-SUFFIX,amebame.com
+  - DOMAIN-SUFFIX,amebaownd.com
+  - DOMAIN-SUFFIX,amebaowndme.com
+  - DOMAIN-SUFFIX,ameblo.jp
+  - DOMAIN-SUFFIX,bucketeer.jp
+  - DOMAIN-SUFFIX,d1otoma47x30pg.cloudfront.net
+  - DOMAIN-SUFFIX,d2wy8f7a9ursnm.cloudfront.net
+  - DOMAIN-SUFFIX,dokusho-ojikan.jp
+  - DOMAIN-SUFFIX,hayabusa.dev
+  - DOMAIN-SUFFIX,hayabusa.io
+  - DOMAIN-SUFFIX,hayabusa.media
+  - DOMAIN-SUFFIX,winticket.jp
+  - DOMAIN-KEYWORD,abematv.akamaized.net
