@@ -31,6 +31,8 @@ https://raw.githubusercontent.com/iunfo/Script/main/QuantumultX_Lazy.conf
 
 
 
+
+
 #### Quantumult X Gallery
 
 部分脚本已配置为Quantumult X Gallery。
