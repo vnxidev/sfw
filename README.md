@@ -17,43 +17,17 @@
 
 ## 规则
 
-**我们并不生产规则，我们只是开源规则的搬运工。**
-
 原项目地址：https://github.com/blackmatrix7/ios_rule_script
 
 所有规则数据都来自互联网，感谢开源规则项目作者的辛勤付出。
 
-## 
 
-#### Quantumult懒人规则
+
+## Quantumult懒人规则
 
 https://raw.githubusercontent.com/iunfo/Script/main/QuantumultX_Lazy.conf
 
 
 
 
-
-#### Quantumult X Gallery
-
-部分脚本已配置为Quantumult X Gallery。
-
-地址： https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/gallery.json
-
-#### BoxJS
-
-感谢 [@chouchoui](https://github.com/chouchoui) 为本项目添加BoxJS的订阅。
-
-地址：https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/boxjs.json
-
-### 外部资源
-
-项目中资源来自互联网上其他开源项目（具体以不同目录的说明为准），这里主要进行一些整合和备份。对于此类资源，无法对使用过程中出现的任何问题进行解答，您需要联系原作者。
-
-地址：https://github.com/blackmatrix7/ios_rule_script/tree/master/external
-
-# 感谢
-
-以下排名不分先后
-
-[@BaileyZyp](https://github.com/BaileyZyp)   [@Mazeorz](https://github.com/Mazeorz)   [@LuzMasonj](https://github.com/LuzMasonj)  [@chouchoui](https://github.com/chouchoui)  [@ypannnn](https://github.com/ypannnn)  [@echizenryoma](https://github.com/echizenryoma)  [@zirawell](https://github.com/zirawell)  [@urzz](https://github.com/urzz)  [@ASD-max](https://github.com/ASD-max)
 
