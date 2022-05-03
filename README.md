@@ -19,7 +19,7 @@
 
 ## Quantumult懒人规则
 
-https://raw.githubusercontent.com/iunfo/Script/main/QuantumultX_Lazy.conf
+https://raw.githubusercontent.com/iunfo/Proxy/main/script/QuantumultX_Lazy.conf
 
 
 
