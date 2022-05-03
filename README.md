@@ -17,7 +17,7 @@
 
 
 
-## Quantumult懒人规则
+## Quantumult X 规则分流懒人配置：
 
 https://raw.githubusercontent.com/iunfo/Proxy/main/script/QuantumultX_Lazy.conf
 
