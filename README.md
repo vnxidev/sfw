@@ -15,12 +15,6 @@
 7. 所有直接或间接使用本项目的个人和组织，应24小时内完成学习和研究，并及时删除本项目中的所有内容。如对本项目的功能有需求，应自行开发相关功能。
 8. 本项目保留随时对免责声明进行补充或更改的权利，直接或间接使用本项目内容的个人或组织，视为接受本项目的特别声明。
 
-## 规则
-
-原项目地址：https://github.com/blackmatrix7/ios_rule_script
-
-所有规则数据都来自互联网，感谢开源规则项目作者的辛勤付出。
-
 
 
 ## Quantumult懒人规则
@@ -29,5 +23,9 @@ https://raw.githubusercontent.com/iunfo/Script/main/QuantumultX_Lazy.conf
 
 
 
+## 规则
 
+原项目地址：https://github.com/blackmatrix7/ios_rule_script
+
+所有规则数据都来自互联网，感谢开源规则项目作者的辛勤付出。
 
