@@ -1,6 +1,6 @@
 # Rules And Scripts
 
-## 说明
+## 说明：
 
 分流规则。
 
@@ -15,9 +15,13 @@ https://cdn.jsdelivr.net/gh/iunfo/sfw@main/QuantumultX/Profiles.conf
 
 
 
-## 规则来源
+## 源库：
 
-https://github.com/blackmatrix7/ios_rule_script
+规则库：https://github.com/blackmatrix7/ios_rule_script
+
+图标库：https://github.com/Koolson/Qure
+
+
 
 所有数据都来自互联网，感谢开源规则项目作者的辛勤付出。
 
