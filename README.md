@@ -19,18 +19,16 @@
 
 ## Quantumult X 规则分流懒人配置：
 
-https://raw.githubusercontent.com/iunfo/sfw/main/script/QuantumultX_Lazy.conf
-
-
+https://raw.githubusercontent.com/iunfo/sfw/main/QuantumultX/Profiles.conf
 
 如果本地网络无法直连接到Github导致下载失败，请尝试以下链接（有CDN加速）：
-https://cdn.jsdelivr.net/gh/iunfo/sfw@main/script/QuantumultX_Lazy.conf
+https://cdn.jsdelivr.net/gh/iunfo/sfw@main/QuantumultX/Profiles.conf
 
 
 
-## 规则
+## 规则来源
 
-原项目地址：https://github.com/blackmatrix7/ios_rule_script
+https://github.com/blackmatrix7/ios_rule_script
 
-所有规则数据都来自互联网，感谢开源规则项目作者的辛勤付出。
+所有数据都来自互联网，感谢开源规则项目作者的辛勤付出。
 
