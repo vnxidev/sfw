@@ -14,7 +14,7 @@
 
 
 
-如果本地网络无法直连接到Github导致下载失败，请尝试以下链接（有CDN加速）：
+有CDN加速：
 
 [QuantumultX.conf](https://cdn.jsdelivr.net/gh/iiNet/sfw@main/QuantumultX.conf)
 
@@ -30,7 +30,7 @@
 
 
 
-如果本地网络无法直连接到Github导致下载失败，请尝试以下链接（有CDN加速）：
+CDN加速：
 
 [shadowrocket.conf](https://cdn.jsdelivr.net/gh/iiNet/sfw@main/shadowrocket.conf)
 
