@@ -8,33 +8,33 @@
 
 ## Quantumult X 规则分流配置：
 
-[QuantumultX.conf](https://raw.githubusercontent.com/iiNet/sfw/main/QuantumultX.conf)
+[QuantumultX.conf](https://raw.githubusercontent.com/iDepth/sfw/main/QuantumultX.conf)
 
-```https://raw.githubusercontent.com/iiNet/sfw/main/QuantumultX.conf```
+```https://raw.githubusercontent.com/iDepth/sfw/main/QuantumultX.conf```
 
 
 
-如果本地网络无法直连接到Github导致下载失败，请尝试以下链接（有CDN加速）：
+有CDN加速：
 
-[QuantumultX.conf](https://cdn.jsdelivr.net/gh/iiNet/sfw@main/QuantumultX.conf)
+[QuantumultX.conf](https://cdn.jsdelivr.net/gh/iDepth/sfw@main/QuantumultX.conf)
 
-```https://cdn.jsdelivr.net/gh/iiNet/sfw@main/QuantumultX.conf```
+```https://cdn.jsdelivr.net/gh/iDepth/sfw@main/QuantumultX.conf```
 
 
 
 ## shadowrocket 规则分流配置：
 
-[shadowrocket.conf](https://raw.githubusercontent.com/iiNet/sfw/main/shadowrocket.conf)
+[shadowrocket.conf](https://raw.githubusercontent.com/iDepth/sfw/main/shadowrocket.conf)
 
-```https://raw.githubusercontent.com/iiNet/sfw/main/shadowrocket.conf```
+```https://raw.githubusercontent.com/iDepth/sfw/main/shadowrocket.conf```
 
 
 
-如果本地网络无法直连接到Github导致下载失败，请尝试以下链接（有CDN加速）：
+CDN加速：
 
-[shadowrocket.conf](https://cdn.jsdelivr.net/gh/iiNet/sfw@main/shadowrocket.conf)
+[shadowrocket.conf](https://cdn.jsdelivr.net/gh/iDepth/sfw@main/shadowrocket.conf)
 
-```https://cdn.jsdelivr.net/gh/iiNet/sfw@main/shadowrocket.conf```
+```https://cdn.jsdelivr.net/gh/iDepth/sfw@main/shadowrocket.conf```
 
 
 
