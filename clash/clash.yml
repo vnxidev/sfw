@@ -6,42 +6,137 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 
-
 proxy-groups:
   - name: "节点选择"
     type: select
     proxies:
-    - REJECT
-    - DIRECT
+      - 🇨🇳 台湾 A-01 *原生 | x1
+      - 🇨🇳 台湾 A-02 *原生 | x1
+      - 🇨🇳 台湾 A-03 *原生 | x1
+      - 🇨🇳 台湾 A-04 *原生 | x1
+      - 🇨🇳 台湾 B-01 *原生 | x1
+      - 🇨🇳 台湾 B-02 *原生 | x1
+      - 🇨🇳 台湾 T-01 *原生 | x1
+      - 🇨🇳 台湾 T-02 *原生 | x1
+      - 🇨🇳 台湾 T-03 *原生 | x1
+      - 🇨🇳 台湾 T-04 *原生 | x1
+      - 🇹🇷 土耳其 S-01 *原生 | x1
+      - 巴基斯坦 S-01 *原生 | x1
+      - 🇧🇷 巴西 S-01 *原生 | x1
+      - 🇩🇪 德国 S-01 *原生 | x1
+      - 🇸🇬 新加坡 A-01 *原生 | x1
+      - 🇸🇬 新加坡 A-02 *NF | x1
+      - 🇯🇵 日本 A-01 *原生 | x1
+      - 🇯🇵 日本 A-02 *NF | x1
+      - 🇯🇵 日本 A-04 *NF | x1
+      - 🇯🇵 日本 A-06 *原生 | x1
+      - 🇯🇵 日本 A-07 *原生 | x1
+      - 🇯🇵 日本 A-08 *原生 | x1
+      - 🇹🇭 泰国 S-01 *NF | x1
+      - 🇺🇲 美国 A-01 *原生 | x1
+      - 🇺🇲 美国 A-02 *原生 | x1
+      - 🇺🇲 美国 A-03 *原生 | x1
+      - 🇺🇲 美国 A-05 *原生 | x1
+      - 🇬🇧 英国 S-01 *NF | x1
+      - 🇵🇭 菲律宾 S-01 *原生 | x1
+      - 🇻🇳 越南 S-01 *原生 | x1
+      - 🇦🇷 阿根廷 S-01 *原生 | x1
+      - 🇭🇰 香港 A-01 *NF | x1
+      - 🇭🇰 香港 A-02 *NF | x1
+      - 🇭🇰 香港 A-03 *NF | x1
+      - 🇭🇰 香港 A-04 *NF | x1
+      - 🇭🇰 香港 A-05 *NF | x1
+      - 🇭🇰 香港 A-06 *NF | x1
+      - 🇭🇰 香港 B-01 *NF | x1
+      - 🇭🇰 香港 B-02 *NF | x1
+      - 🇭🇰 香港 B-03 *NF | x1
+      - 🇭🇰 香港 B-04 *NF | x1
+      - 🇭🇰 香港 B-05 *NF | x1
+      - 🇭🇰 香港 B-06 *NF | x1
+      - 🇭🇰 香港 B-07 *原生 | x1
+      - 🇭🇰 香港 B-08 *原生 | x1
+      - 🇭🇰 香港 B-09 *原生 | x1
+      - 🇭🇰 香港 C-03 *原生 | x1
+      - 🇭🇰 香港 C-04 *原生 | x1
+      - 🇭🇰 香港 C-05 *原生 | x1
+      - 🇭🇰 香港 IPLC *游戏专线 禁视频| x5
+      - 🇲🇾 马来西亚 S-01 *原生 | x1
 
   - name: "延迟最低"
-    type: select
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
-    - REJECT
-    - DIRECT
+      - 🇨🇳 台湾 A-01 *原生 | x1
+      - 🇨🇳 台湾 A-02 *原生 | x1
+      - 🇨🇳 台湾 A-03 *原生 | x1
+      - 🇨🇳 台湾 A-04 *原生 | x1
+      - 🇨🇳 台湾 B-01 *原生 | x1
+      - 🇨🇳 台湾 B-02 *原生 | x1
+      - 🇨🇳 台湾 T-01 *原生 | x1
+      - 🇨🇳 台湾 T-02 *原生 | x1
+      - 🇨🇳 台湾 T-03 *原生 | x1
+      - 🇨🇳 台湾 T-04 *原生 | x1
+      - 🇹🇷 土耳其 S-01 *原生 | x1
+      - 巴基斯坦 S-01 *原生 | x1
+      - 🇧🇷 巴西 S-01 *原生 | x1
+      - 🇩🇪 德国 S-01 *原生 | x1
+      - 🇸🇬 新加坡 A-01 *原生 | x1
+      - 🇸🇬 新加坡 A-02 *NF | x1
+      - 🇯🇵 日本 A-01 *原生 | x1
+      - 🇯🇵 日本 A-02 *NF | x1
+      - 🇯🇵 日本 A-04 *NF | x1
+      - 🇯🇵 日本 A-06 *原生 | x1
+      - 🇯🇵 日本 A-07 *原生 | x1
+      - 🇯🇵 日本 A-08 *原生 | x1
+      - 🇹🇭 泰国 S-01 *NF | x1
+      - 🇺🇲 美国 A-01 *原生 | x1
+      - 🇺🇲 美国 A-02 *原生 | x1
+      - 🇺🇲 美国 A-03 *原生 | x1
+      - 🇺🇲 美国 A-05 *原生 | x1
+      - 🇬🇧 英国 S-01 *NF | x1
+      - 🇵🇭 菲律宾 S-01 *原生 | x1
+      - 🇻🇳 越南 S-01 *原生 | x1
+      - 🇦🇷 阿根廷 S-01 *原生 | x1
+      - 🇭🇰 香港 A-01 *NF | x1
+      - 🇭🇰 香港 A-02 *NF | x1
+      - 🇭🇰 香港 A-03 *NF | x1
+      - 🇭🇰 香港 A-04 *NF | x1
+      - 🇭🇰 香港 A-05 *NF | x1
+      - 🇭🇰 香港 A-06 *NF | x1
+      - 🇭🇰 香港 B-01 *NF | x1
+      - 🇭🇰 香港 B-02 *NF | x1
+      - 🇭🇰 香港 B-03 *NF | x1
+      - 🇭🇰 香港 B-04 *NF | x1
+      - 🇭🇰 香港 B-05 *NF | x1
+      - 🇭🇰 香港 B-06 *NF | x1
+      - 🇭🇰 香港 B-07 *原生 | x1
+      - 🇭🇰 香港 B-08 *原生 | x1
+      - 🇭🇰 香港 B-09 *原生 | x1
+      - 🇭🇰 香港 C-03 *原生 | x1
+      - 🇭🇰 香港 C-04 *原生 | x1
+      - 🇭🇰 香港 C-05 *原生 | x1
+      - 🇭🇰 香港 IPLC *游戏专线 禁视频| x5
+      - 🇲🇾 马来西亚 S-01 *原生 | x1
 
   - name: "YouTube"
     type: select
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
-    - DIRECT
 
   - name: "Netflix"
     type: select
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
-    - DIRECT
 
   - name: "谷歌服务"
     type: select
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
     - DIRECT
 
   - name: "微软服务"
@@ -49,7 +144,6 @@ proxy-groups:
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
     - DIRECT
 
   - name: "苹果服务"
@@ -57,7 +151,6 @@ proxy-groups:
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
     - DIRECT
 
   - name: "国外网站"
@@ -65,15 +158,10 @@ proxy-groups:
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
-    - DIRECT
 
   - name: "国内网站"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
-    - REJECT
     - DIRECT
 
   - name: "漏网之鱼"
@@ -81,65 +169,61 @@ proxy-groups:
     proxies:
     - 节点选择
     - 延迟最低
-    - REJECT
-    - DIRECT
 
 
 
 rule-providers:
-  反劫持:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hijacking/Hijacking.yaml"
-    path: ./ruleset/Hijacking.yaml
-    interval: 86400
-  隐私保护:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical.yaml"
-    path: ./ruleset/Privacy_Classical.yaml
-    interval: 86400
+
   微软服务:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml"
     path: ./ruleset/Microsoft.yaml
     interval: 86400
   谷歌服务:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml"
     path: ./ruleset/Google.yaml
     interval: 86400
   苹果服务:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml"
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple.yaml"
     path: ./ruleset/Apple.yaml
     interval: 86400   
   YouTube:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml"
     path: ./ruleset/YouTube.yaml
     interval: 86400        
   Netflix:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml"
     path: ./ruleset/Netflix.yaml
     interval: 86400
   国外网站:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml"
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Global/Global_Classical.yaml"
     path: ./ruleset/Global_Classical.yaml
     interval: 86400  
 
   
 rules:
-  - RULE-SET,反劫持,REJECT
-  - RULE-SET,隐私保护,REJECT 
+
+  # LAN
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+
+
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,Netflix
   - RULE-SET,谷歌服务,谷歌服务
