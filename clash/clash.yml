@@ -10,57 +10,8 @@ proxy-groups:
   - name: "节点选择"
     type: select
     proxies:
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 台湾 A-02 *原生 | x1
-      - 🇨🇳 台湾 A-03 *原生 | x1
-      - 🇨🇳 台湾 A-04 *原生 | x1
-      - 🇨🇳 台湾 B-01 *原生 | x1
-      - 🇨🇳 台湾 B-02 *原生 | x1
-      - 🇨🇳 台湾 T-01 *原生 | x1
-      - 🇨🇳 台湾 T-02 *原生 | x1
-      - 🇨🇳 台湾 T-03 *原生 | x1
-      - 🇨🇳 台湾 T-04 *原生 | x1
-      - 🇹🇷 土耳其 S-01 *原生 | x1
-      - 巴基斯坦 S-01 *原生 | x1
-      - 🇧🇷 巴西 S-01 *原生 | x1
-      - 🇩🇪 德国 S-01 *原生 | x1
-      - 🇸🇬 新加坡 A-01 *原生 | x1
-      - 🇸🇬 新加坡 A-02 *NF | x1
-      - 🇯🇵 日本 A-01 *原生 | x1
-      - 🇯🇵 日本 A-02 *NF | x1
-      - 🇯🇵 日本 A-04 *NF | x1
-      - 🇯🇵 日本 A-06 *原生 | x1
-      - 🇯🇵 日本 A-07 *原生 | x1
-      - 🇯🇵 日本 A-08 *原生 | x1
-      - 🇹🇭 泰国 S-01 *NF | x1
-      - 🇺🇲 美国 A-01 *原生 | x1
-      - 🇺🇲 美国 A-02 *原生 | x1
-      - 🇺🇲 美国 A-03 *原生 | x1
-      - 🇺🇲 美国 A-05 *原生 | x1
-      - 🇬🇧 英国 S-01 *NF | x1
-      - 🇵🇭 菲律宾 S-01 *原生 | x1
-      - 🇻🇳 越南 S-01 *原生 | x1
-      - 🇦🇷 阿根廷 S-01 *原生 | x1
-      - 🇭🇰 香港 A-01 *NF | x1
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇭🇰 香港 A-03 *NF | x1
-      - 🇭🇰 香港 A-04 *NF | x1
-      - 🇭🇰 香港 A-05 *NF | x1
-      - 🇭🇰 香港 A-06 *NF | x1
-      - 🇭🇰 香港 B-01 *NF | x1
-      - 🇭🇰 香港 B-02 *NF | x1
-      - 🇭🇰 香港 B-03 *NF | x1
-      - 🇭🇰 香港 B-04 *NF | x1
-      - 🇭🇰 香港 B-05 *NF | x1
-      - 🇭🇰 香港 B-06 *NF | x1
-      - 🇭🇰 香港 B-07 *原生 | x1
-      - 🇭🇰 香港 B-08 *原生 | x1
-      - 🇭🇰 香港 B-09 *原生 | x1
-      - 🇭🇰 香港 C-03 *原生 | x1
-      - 🇭🇰 香港 C-04 *原生 | x1
-      - 🇭🇰 香港 C-05 *原生 | x1
-      - 🇭🇰 香港 IPLC *游戏专线 禁视频| x5
-      - 🇲🇾 马来西亚 S-01 *原生 | x1
+      - DIRECT
+
 
   - name: "延迟最低"
     type: url-test
@@ -68,96 +19,95 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 台湾 A-02 *原生 | x1
-      - 🇨🇳 台湾 A-03 *原生 | x1
-      - 🇨🇳 台湾 A-04 *原生 | x1
-      - 🇨🇳 台湾 B-01 *原生 | x1
-      - 🇨🇳 台湾 B-02 *原生 | x1
-      - 🇨🇳 台湾 T-01 *原生 | x1
-      - 🇨🇳 台湾 T-02 *原生 | x1
-      - 🇨🇳 台湾 T-03 *原生 | x1
-      - 🇨🇳 台湾 T-04 *原生 | x1
-      - 🇹🇷 土耳其 S-01 *原生 | x1
-      - 巴基斯坦 S-01 *原生 | x1
-      - 🇧🇷 巴西 S-01 *原生 | x1
-      - 🇩🇪 德国 S-01 *原生 | x1
-      - 🇸🇬 新加坡 A-01 *原生 | x1
-      - 🇸🇬 新加坡 A-02 *NF | x1
-      - 🇯🇵 日本 A-01 *原生 | x1
-      - 🇯🇵 日本 A-02 *NF | x1
-      - 🇯🇵 日本 A-04 *NF | x1
-      - 🇯🇵 日本 A-06 *原生 | x1
-      - 🇯🇵 日本 A-07 *原生 | x1
-      - 🇯🇵 日本 A-08 *原生 | x1
-      - 🇹🇭 泰国 S-01 *NF | x1
-      - 🇺🇲 美国 A-01 *原生 | x1
-      - 🇺🇲 美国 A-02 *原生 | x1
-      - 🇺🇲 美国 A-03 *原生 | x1
-      - 🇺🇲 美国 A-05 *原生 | x1
-      - 🇬🇧 英国 S-01 *NF | x1
-      - 🇵🇭 菲律宾 S-01 *原生 | x1
-      - 🇻🇳 越南 S-01 *原生 | x1
-      - 🇦🇷 阿根廷 S-01 *原生 | x1
-      - 🇭🇰 香港 A-01 *NF | x1
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇭🇰 香港 A-03 *NF | x1
-      - 🇭🇰 香港 A-04 *NF | x1
-      - 🇭🇰 香港 A-05 *NF | x1
-      - 🇭🇰 香港 A-06 *NF | x1
-      - 🇭🇰 香港 B-01 *NF | x1
-      - 🇭🇰 香港 B-02 *NF | x1
-      - 🇭🇰 香港 B-03 *NF | x1
-      - 🇭🇰 香港 B-04 *NF | x1
-      - 🇭🇰 香港 B-05 *NF | x1
-      - 🇭🇰 香港 B-06 *NF | x1
-      - 🇭🇰 香港 B-07 *原生 | x1
-      - 🇭🇰 香港 B-08 *原生 | x1
-      - 🇭🇰 香港 B-09 *原生 | x1
-      - 🇭🇰 香港 C-03 *原生 | x1
-      - 🇭🇰 香港 C-04 *原生 | x1
-      - 🇭🇰 香港 C-05 *原生 | x1
-      - 🇭🇰 香港 IPLC *游戏专线 禁视频| x5
-      - 🇲🇾 马来西亚 S-01 *原生 | x1
+      - DIRECT
+
 
   - name: "YouTube"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
 
   - name: "Netflix"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
 
   - name: "谷歌服务"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
-    - DIRECT
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
 
   - name: "微软服务"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
-    - DIRECT
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
+      - DIRECT
 
   - name: "苹果服务"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
-    - DIRECT
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
+      - DIRECT
 
   - name: "国外网站"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
+      - DIRECT
 
   - name: "国内网站"
     type: select
@@ -167,8 +117,87 @@ proxy-groups:
   - name: "漏网之鱼"
     type: select
     proxies:
-    - 节点选择
-    - 延迟最低
+      - 节点选择
+      - 延迟最低
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇰🇷 韩国节点
+      - 🇯🇵 日本节点
+      - 🇺🇸 美国节点
+      - 🇬🇧 英国节点
+      - 🇸🇬 新加坡节点
+      - ♾ 其他节点
+      - DIRECT
+
+
+
+  - name: 🇭🇰 香港节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
+
+  - name: 🇹🇼 台湾节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
+
+  - name: 🇰🇷 韩国节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
+
+  - name: 🇯🇵 日本节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
+
+
+  - name: 🇺🇸 美国节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择    
+
+
+  - name: 🇬🇧 英国节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
+
+
+  - name: 🇸🇬 新加坡节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
+
+
+  - name: ♾ 其他节点
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 节点选择
 
 
 
