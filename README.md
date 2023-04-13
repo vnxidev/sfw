@@ -8,33 +8,33 @@
 
 ## Quantumult X 规则分流配置：
 
-[QuantumultX.conf](https://raw.githubusercontent.com/iDepth/sfw/main/QuantumultX.conf)
+[QuantumultX.conf](https://raw.githubusercontent.com/vnxidev/sfw/main/QuantumultX.conf)
 
-```https://raw.githubusercontent.com/iDepth/sfw/main/QuantumultX.conf```
+```https://raw.githubusercontent.com/vnxidev/sfw/main/QuantumultX.conf```
 
 
 
 有CDN加速：
 
-[QuantumultX.conf](https://cdn.jsdelivr.net/gh/iDepth/sfw@main/QuantumultX.conf)
+[QuantumultX.conf](https://cdn.jsdelivr.net/gh/vnxidev/sfw@main/QuantumultX.conf)
 
-```https://cdn.jsdelivr.net/gh/iDepth/sfw@main/QuantumultX.conf```
+```https://cdn.jsdelivr.net/gh/vnxidev/sfw@main/QuantumultX.conf```
 
 
 
 ## shadowrocket 规则分流配置：
 
-[shadowrocket.conf](https://raw.githubusercontent.com/iDepth/sfw/main/shadowrocket.conf)
+[shadowrocket.conf](https://raw.githubusercontent.com/vnxidev/sfw/main/shadowrocket.conf)
 
-```https://raw.githubusercontent.com/iDepth/sfw/main/shadowrocket.conf```
+```https://raw.githubusercontent.com/vnxidev/sfw/main/shadowrocket.conf```
 
 
 
 CDN加速：
 
-[shadowrocket.conf](https://cdn.jsdelivr.net/gh/iDepth/sfw@main/shadowrocket.conf)
+[shadowrocket.conf](https://cdn.jsdelivr.net/gh/vnxidev/sfw@main/shadowrocket.conf)
 
-```https://cdn.jsdelivr.net/gh/iDepth/sfw@main/shadowrocket.conf```
+```https://cdn.jsdelivr.net/gh/vnxidev/sfw@main/shadowrocket.conf```
 
 
 
