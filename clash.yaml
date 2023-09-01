@@ -1,0 +1,277 @@
+# Port of HTTP(S) proxy server on the local end
+port: 7890
+ 
+# Port of SOCKS5 proxy server on the local end
+socks-port: 7891
+ 
+# Transparent proxy server port for Linux and macOS
+# redir-port: 7892
+ 
+# HTTP(S) and SOCKS5 server on the same port
+mixed-port: 7890
+ 
+# authentication of local SOCKS5/HTTP(S) server
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+ 
+# Set to true to allow connections to local-end server from
+# other LAN IP addresses
+allow-lan: false
+ 
+# This is only applicable when `allow-lan` is `true`
+# '*': bind all IP addresses
+# 192.168.122.11: bind a single IPv4 address
+# "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+bind-address: '*'
+ 
+# Clash router working mode
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: Rule
+ 
+# Clash by default prints logs to STDOUT
+# info / warning / error / debug / silent
+log-level: info
+ 
+ipv6: true
+ 
+# RESTful web API listening address
+external-controller: 127.0.0.1:59446
+ 
+
+hosts:
+  'mtalk.google.com': 108.177.125.188
+  # '*.clash.dev': 127.0.0.1
+  # '.dev': 127.0.0.1
+  # 'alpha.clash.dev': '::1'
+ 
+# DNS server settings
+# This section is optional. When not present, DNS server will be disabled.
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  # ipv6: false # when false, response to AAAA questions will be empty
+ 
+  # These nameservers are used to resolve the DNS nameserver hostnames below.
+  # Specify IP addresses only
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  enhanced-mode: fake-ip # redir-host or fake-ip
+  fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
+  
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+
+# 机场订阅列表，可添加多个机场
+# 机场名自已随便取，url后面填机场的订阅链接
+proxy-providers:
+  机场名:
+    type: http
+    path: ./profiles/1626513136686.yml
+    url: https://sttsub.top/link/mopUy7oEHN6xdqSb?clash=1
+    interval: 36000
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 3600
+
+
+      
+proxy-groups:
+# 策略组示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/blob/master/README.md
+
+    # 代理节点选择
+  - name: "节点选择"
+    type: select
+    use: 
+      - 机场名
+  
+  - name: "串流平台"
+    type: select
+    proxies: 
+      - 节点选择
+  
+  - name: "苹果服务"
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+
+  - name: "谷歌服务"
+    type: select
+    proxies: 
+      - 节点选择
+
+  - name: "微软服务"
+    type: select
+    proxies: 
+      - 节点选择
+      - DIRECT
+
+  - name: "境外网站"
+    type: select
+    proxies: 
+      - 节点选择
+      - REJECT
+
+  - name: "境内网站"
+    type: select
+    proxies: 
+      - DIRECT
+      - 节点选择
+  
+  - name: "规则之外"
+    type: select
+    proxies: 
+      - REJECT
+      - DIRECT
+      - 节点选择
+  
+
+
+rule-providers:
+
+  Netflix: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml
+    path: ./Rule/Netflix.yaml
+    interval: 86400
+  
+  Apple: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
+    path: ./Rule/Apple.yaml
+    interval: 3600
+  
+  Google: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    path: ./Rule/google.yaml
+    interval: 3600
+
+  YouTube: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: ./Rule/YouTube.yaml
+    interval: 3600
+
+  Microsoft: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    path: ./Rule/Microsoft.yaml
+    interval: 3600
+
+  Bing: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    path: ./Rule/Bing.yaml
+    interval: 3600
+
+
+  Global: 
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml
+    path: ./Rule/Global.yaml
+    interval: 3600
+
+
+#  *已经在后面设置“- GEOIP,CN,”，故取消此处设置*
+#  ChinaMax: 
+#    type: http
+#    behavior: classical
+#    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
+#    path: ./Rule/ChinaMax.yaml
+#    interval: 3600
+
+ 
+
+# 规则
+rules:
+  - RULE-SET,Netflix,串流平台
+  - RULE-SET,Apple,苹果服务
+  - RULE-SET,Google,谷歌服务
+  - RULE-SET,YouTube,谷歌服务
+  - RULE-SET,Microsoft,微软服务
+  - RULE-SET,Bing,微软服务
+  - RULE-SET,Global,境外网站
+  # - RULE-SET,ChinaMax,境内网站  //已经在后面设置“GEOIP,CN,”，故取消此处设置
+
+
+  - PROCESS-NAME,v2ray,DIRECT
+  - PROCESS-NAME,xray,DIRECT
+  - PROCESS-NAME,naive,DIRECT
+  - PROCESS-NAME,trojan,DIRECT
+  - PROCESS-NAME,trojan-go,DIRECT
+  - PROCESS-NAME,ss-local,DIRECT
+  - PROCESS-NAME,privoxy,DIRECT
+  - PROCESS-NAME,leaf,DIRECT
+  - PROCESS-NAME,v2ray.exe,DIRECT
+  - PROCESS-NAME,xray.exe,DIRECT
+  - PROCESS-NAME,naive.exe,DIRECT
+  - PROCESS-NAME,trojan.exe,DIRECT
+  - PROCESS-NAME,trojan-go.exe,DIRECT
+  - PROCESS-NAME,ss-local.exe,DIRECT
+  - PROCESS-NAME,privoxy.exe,DIRECT
+  - PROCESS-NAME,leaf.exe,DIRECT
+  - PROCESS-NAME,Surge,DIRECT
+  - PROCESS-NAME,Surge 2,DIRECT
+  - PROCESS-NAME,Surge 3,DIRECT
+  - PROCESS-NAME,Surge 4,DIRECT
+  - PROCESS-NAME,Surge%202,DIRECT
+  - PROCESS-NAME,Surge%203,DIRECT
+  - PROCESS-NAME,Surge%204,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,qBittorrent,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - PROCESS-NAME,aria2c.exe,DIRECT
+  - PROCESS-NAME,BitComet.exe,DIRECT
+  - PROCESS-NAME,fdm.exe,DIRECT
+  - PROCESS-NAME,NetTransport.exe,DIRECT
+  - PROCESS-NAME,qbittorrent.exe,DIRECT
+  - PROCESS-NAME,Thunder.exe,DIRECT
+  - PROCESS-NAME,ThunderVIP.exe,DIRECT
+  - PROCESS-NAME,transmission-daemon.exe,DIRECT
+  - PROCESS-NAME,transmission-qt.exe,DIRECT
+  - PROCESS-NAME,uTorrent.exe,DIRECT
+  - PROCESS-NAME,WebTorrent.exe,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+
+  # Local Area Network
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+ 
+  # （可选）使用来自 ipipdotnet 的 ChinaIP 以解决数据不准确的问题，使用 ChinaIP.yaml 时可禁用下列直至（包括）「GEOIP,CN」规则
+  # - IP-CIDR,119.28.28.28/32,DIRECT
+  # - IP-CIDR,182.254.116.0/24,DIRECT
+  - GEOIP,CN,境内网站
+
+  - MATCH,规则之外
