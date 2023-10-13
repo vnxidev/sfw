@@ -39,7 +39,7 @@ CDN加速：
 
 ## clash 
 
-```https://raw.githubusercontent.com/vnxidev/sfw/main/clash.yaml```
+[clash.yaml](https://raw.githubusercontent.com/vnxidev/sfw/main/clash.yaml)
 
 ## 源库：
 
