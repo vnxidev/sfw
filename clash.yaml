@@ -26,7 +26,7 @@ dns:
 proxy-providers:
   stt: #stt是机场名称自己随意修改
     type: http
-    path: ./profiles/ssp.yml
+    path: ./profiles/stt.yml
     url: https://ddd.test.com/api/v1/client/subscribe?token=456456546bb67981552 #这里填写机场订阅链接
     interval: 36000
     health-check:
