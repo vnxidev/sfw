@@ -37,6 +37,9 @@ CDN加速：
 ```https://cdn.jsdelivr.net/gh/vnxidev/sfw@main/shadowrocket.conf```
 
 
+## clash 
+
+```https://raw.githubusercontent.com/vnxidev/sfw/main/clash.yaml```
 
 ## 源库：
 
